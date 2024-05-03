@@ -1,4 +1,5 @@
 'use strict';
+const { faker } = require('@faker-js/faker')
 
 module.exports = {
   /**
@@ -16,5 +17,40 @@ module.exports = {
    * This gives you an opportunity to set up your data model,
    * run jobs, or perform some special logic.
    */
-  bootstrap(/*{ strapi }*/) {},
+
+  // async bootstrap({ strapi }) {
+  //   for (let i = 0; i < 3; i++) {
+  //     await strapi.entityService.create("api::category.category",{
+  //       data: {
+  //         title: faker.word.adjective(),
+  //         status: 1,
+  //         publishedAt: '2023-02-11 21:33:38.928000',
+  //         created_by_id: 1,
+  //         updated_by_id: 1
+  //       },
+  //     });
+  //   }
+  // },
+
+  async bootstrap({ strapi }) {
+
+    // for (let i = 0; i < 1000; i++) {
+    //   await strapi.entityService.create("api::product.product",{
+    //     data: {
+    //       title: faker.word.adjective() + " " + faker.word.noun(),
+    //       slug: faker.lorem.slug(),
+    //       description: faker.lorem.paragraph(),
+    //       price: faker.commerce.price(),
+    //       qty: 5,
+    //       is_featured: 1,
+    //       category: 2,
+    //       publishedAt: '2023-02-11 21:33:38.928000',
+    //       created_by_id: 1,
+    //       updated_by_id: 1
+    //     },
+    //   });
+    // }
+
+  },
+
 };
